@@ -1,8 +1,9 @@
 import os
 
 with open("README.md", "a") as readme:
-    readme.write("## Preview\n\n")
-    readme.write('<div style="display: flex; flex-wrap: wrap; gap: 8px;">\n')
-    for entry in os.listdir("images"):
-        readme.write(f'\t<img src="images/{entry}">\n')
+    readme.write("\n\n## Preview\n\n")
+    readme.write('<div style="display: flex; flex-wrap: wrap; gap: 4px;">\n')
+    for entry in sorted(os.listdir("images")):
+        alt = entry.split(".")[0]
+        readme.write(f'\t<img src="images/{entry}" alt="{alt}">\n')
     readme.write('</div>')
