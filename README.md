@@ -1,6 +1,8 @@
 # Emoji flag images
 
-I just generated this shit woo
+Flag emojis rendered as PNGs. 
+
+Size is **128x128 pixels**. If you need a different size, tweak the settings in the python script and generate the images yourself.
 
 ## Preview
 
